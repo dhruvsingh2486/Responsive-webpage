@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    /* BLACK HEADER    */
+    .black_hrader {
+      background-color: black;
+      color: white;
+      height: 2%;
+      padding-top: 1%;
+      padding-left: 32%;
+    }
+
+    .in_black_header {
+      font-size: 90%;
+    }
+    .first_header {
+      display: flex;
+    }
+    .icons {
+      /* font-size: 120%; */
+      margin-top: 0.2%;
+      margin-right: 1%;
+      margin-left: 1%;
+    }
+
+    .right_pink_icons {
+      display: flex;
+      gap: 30%;
+      font-size: 110%;
+      margin-top: 0.2%;
+      margin-left: 80%;
+      cursor: pointer;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+
+    /* BANNER   */
+
+    .image1 {
+      width: 100%;
+    }
+
+    /* FACE NAVBAR   */
+
+    .face_nav {
+      border-radius: 5rem;
+      width: 85%;
+      height: 125%;
+      color: black;
+      background-color: bisque;
+      display: flex;
+      flex-direction: row;
+      margin-left: 6%;
+      position: relative;
+      z-index: 1;
+      margin-top: -1.5%;
+      font-weight: 400;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      padding-top: 0.7%;
+    }
+
+    .face_nav ul li {
+      list-style: none;
+      display: flex;
+      /* border: 1px solid black; */
+      width: 100%;
+      height: 80%;
+      font-size: 100%;
+    }
+
+    .face_nav ul {
+      display: flex;
+      gap: 9%;
+      /* border: 1px solid red; */
+      width: 49%;
+    }
+
+    .section2 {
+      /* width: 85%; */
+      margin-top: 50px;
+    }
+
+    .image2 img {
+      width: 100%;
+
+      /* border: 1px solid black; */
+    }
+
+    .sec2_text {
+      /* border: 1px solid blue; */
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .col-md-5 .sec2_text .p_tag1 {
+      color: red;
+      font-size: 30px;
+      font-weight: bolder;
+    }
+
+    .col-md-5 .sec2_text .p_tag2 {
+      font-size: 25px;
+      font-weight: 400;
+    }
+
+    .col-md-5 .sec2_text .p_tag3 {
+      text-align: justify;
+    }
+
+    button {
+      background-color: red;
+      height: 45px;
+      width: 180px;
+      color: white;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    button p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+
+
+    .sec3_heading {
+      font-size: 200%;
+      font-weight: 800;
+      color: rgb(255, 0, 0);
+      text-align: center;
+      margin-bottom: 3%;
+    }
+
+    .sec_3_images {
+      width: 100%;
+      /* height: 100%; */
+    }
+
+    .sec_3_card {
+      height: 100%;
+      width: 22%;
+      margin-left: 2.5%;
+      /* border: 1px solid black; */
+      /* margin: 0; */
+      padding: 0;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      margin-bottom: 3%;
+    }
+
+    .card_heading {
+      color: red;
+      font-size: 130%;
+      font-weight: 700;
+      text-transform: capitalize;
+      padding: 5%;
+    }
+
+    .card_text {
+      font-size: 100%;
+      padding: 5%;
+    }
+
+    .sec_4 {
+      padding-left: 2%;
+      margin-top: 5%;
+      margin-bottom: 4%;
+    }
+
+    .sec4_text {
+      margin-top: 4%;
+    }
+
+    .sec_4_heading {
+      font-size: 250%;
+      color: red;
+      font-weight: 700;
+    }
+
+    .earth_image {
+      width: 100%;
+    }
+    .section5_spans {
+      color: red;
+      font-size: 130%;
+      font-weight: 500;
+    }
+
+    .sec5_row {
+      gap: 3%;
+      margin-left: 5%;
+      font-size: 90%;
+      margin-bottom: 4%;
+    }
+
+    .sec_6 {
+      margin-bottom: 20px;
+    }
+
+    .sec_6_card {
+      width: 20%;
+      /* height: 25%; */
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      /* border: 1px solid green; */
+      padding: 10px;
+      gap: 10px;
+      margin-left: 20px;
+    }
+
+    /* RED CARD SECTION CSS   */
+
+    body {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    .image {
+      /* border: 1px solid black; */
+      width: 100%;
+      height: 10%;
+      margin-top: 6%;
+      position: relative;
+      z-index: -1;
+    }
+    img {
+      width: 100%;
+      /* height: 100%; */
+    }
+    .red {
+      background-color: rgba(255, 0, 0, 0.883);
+      width: 100%;
+      height: 54vh;
+      z-index: 1;
+      margin-top: -23.5%;
+    }
+
+    .content {
+      /* border: 2px solid blue; */
+      /* align-items: center; */
+      /* text-align: center; */
+      z-index: 3;
+      margin-top: -18%;
+    }
+    h1 {
+      color: rgb(255, 196, 0);
+      margin-left: 40%;
+      margin-bottom: 6%;
+    }
+    .card {
+      width: 25%;
+      /* border: 1px solid black; */
+      /* height: 35%; */
+      margin-left: 2%;
+      padding-left: 1%;
+      padding-top: 2%;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background-color: white;
+      margin-bottom: 50px;
+    }
+    .card_pic {
+      width: 70%;
+      /* height: 80px; */
+    }
+    p {
+      font-size: 90%;
+    }
+    .cards {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      margin-left: 13%;
+    }
+
+    .event_btn {
+      border-radius: 0px;
+      float: right;
+    }
+    /* section 8  */
+
+    .sec8 {
+      padding-left: 10%;
+    }
+
+    .sec8_heading {
+      font-size: 35px;
+      font-weight: 900;
+      color: red;
+    }
+
+    .sec8_textArea {
+      /* border: 1px solid black; */
+      width: 40%;
+      padding-top: 8%;
+    }
+
+    .last_button {
+      border: 2px solid rgb(16, 16, 45);
+      background-color: transparent;
+      width: 190px;
+      border-radius: 0%;
+      color: rgb(16, 16, 45);
+      display: flex;
+      justify-content: space-evenly;
+      /* padding-top: 4px; */
+      /* margin-top: -30px; */
+      /* margin-bottom: 20px; */
+    }
+
+    .last_button i{
+      margin-top: 12px;
+    }
+
+    /* .last_button p{
+      padding-bottom: 51px;
+    } */
+
+    .children_image {
+      width: 120%;
+    }
+
+    /* FOOTER CSS  */
+
+    .frst_col {
+      padding-top: 3%;
+      padding-left: 5%;
+    }
+
+    .main_heading {
+      font-size: 33px;
+      font-weight: bold;
+    }
+    p {
+      /* margin-bottom: 5px; */
+      margin-top: 0px;
+    }
+    .input{
+      margin-top: 4.5%;
+    }
+    input {
+      margin-top: 10%;
+      height: 30%;
+      width: 60%;
+      border-radius: 20px;
+      padding-left: 5%;
+      margin-left: 30%;
+      border: none;
+      outline: none;
+      background-image: url(https://www.shutterstock.com/image-vector/black-arrow-icon-pointing-right-260nw-632290952.jpg);
+      background-size: 12%;
+      background-repeat: no-repeat;
+      background-position: 95% 2px;
+    }
+
+    .column_2 {
+      height: 100vh;
+      background-color: white;
+      padding-left: 5%;
+      /* padding-right: 3%; */
+      position: absolute;
+      z-index: -1;
+       margin-top: -80px;
+      padding-top: 10%;
+    }
+
+    .last_class {
+      /* border: 1px solid black; */
+      margin-top: 0px;
+      padding: 0px;
+    }
+
+    input {
+      margin-top: 0px;
+      height: 40px;
+    }
+
+    /* RESPONSIVE  */
+
+    @media only screen and (max-width: 600px) {
+      body {
+        /* background-color: lightblue; */
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+      }
+
+    
+
+      /* black header  */
+
+      .black_hrader {
+        width: 100%;
+        /* border: 1px solid red; */
+        padding: 0px;
+      }
+      .first_header {
+        /* text-align: center; */
+        /* width: 100%; */
+        font-size: 10px;
+        /* border: 1px solid white; */
+        padding-left: 26%;
+
+        padding-top: 3px;
+      }
+
+      .first_header i {
+        padding-top: 3px;
+      }
+      .right_pink_icons {
+        text-align: center;
+        padding-left: 40%;
+        padding-top: 2px;
+        gap: 20px;
+        /* border: 1px solid white; */
+        margin: auto;
+        font-size: 16px;
+        height: 25px;
+      }
+
+      /* sec_3_row  */
+
+      .sec_3_row {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .sec_3_card {
+        width: 95%;
+      }
+
+      /* earth_image  */
+
+      .earth_image {
+        margin-left: 0px;
+        margin-top: 30px;
+      }
+
+      /* event_btn  */
+
+      .event_btn {
+        float: none;
+        justify-self: center;
+        margin-bottom: 20px;
+        margin-left: 23%;
+      }
+
+      /* event_image  */
+      /* .event_image{
+        width: 91%; margin-left: 48px; gap: 26px
+      } */
+
+      /* event_image */
+
+      .event_image {
+        /* margin: auto; */
+        /* padding: 10px; */
+        margin-right: 10px;
+        /* border: 1px solid black; */
+        width: 100%;
+        margin-left: 0px;
+        padding: 0px;
+        margin-bottom: 20px;
+      }
+
+      /* sec_6_card  */
+
+      .sec_6_card {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+      }
+
+      /* face_nav  */
+
+      .face_nav {
+        display: flex;
+        flex-direction: column;
+        height: 65px;
+        width: 100%;
+        margin-left: 0px;
+        padding-top: 4%;
+        gap: 0px;
+        font-size: 13px;
+        border-radius: 10px;
+        margin-top: 50px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .face_nav ul {
+        display: flex;
+        text-align: center;
+        /* border: 1px solid black; */
+        width: 90%;
+        margin-left: 4.2%;
+        padding: 0px;
+        /* margin-top: 10px; */
+        padding-bottom: 0px;
+      }
+
+      .face_nav ul li {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      /* red  */
+
+      .red {
+        height: 12.8vh;
+        /* background-color: rgba(255, 0, 0, 0.893); */
+      }
+
+      .content h1 {
+        /* border: 1px solid black; */
+        /* padding-left: 0px; */
+        margin-left: 0px;
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: row;
+        /* border: 1px solid black; */
+        margin: 0px;
+        padding-left: 0px;
+        text-align: center;
+        justify-content: center;
+      }
+      .card {
+        width: 30vw;
+        /* height: 30vh; */
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .sec8_textArea {
+        /* border: 1px solid black; */
+        width: 100vw;
+        padding-right: 23%;
+        margin: 0px;
+        justify-content: center;
+      }
+
+      .sec8_textArea button {
+        margin-left: 25%;
+      }
+
+      .children_image {
+        width: 92%;
+        margin-top: 30px;
+        /* margin-bottom: 30px; */
+        padding: 0px;
+      }
+
+      /* .last_class{
+      margin-top: 30px;
+    } */
+
+      /* .input {
+      /* border: 1px solid black; */
+      
+
+      input{
+        display: flex;
+        justify-content: space-between;
+        background-position: 87% 9px;
+        padding-left: 15px;
+        /* background-image: none; */
+        /* border: 1px solid black; */
+        margin-top: 50px;
+        margin-bottom: 10px;
+        border: 1px solid red;
+        width: 40%;
+        border-radius:20px ;
+        margin-left: 32%;
+       
+      }
+      .column_2{
+       margin-top: 20px;
+      }
+
+      .img2{
+        margin-left: 26%;
+
+      }
+
+      .readmore_btn{
+        margin-left: 30%;
+      }
+
+
+    }
+  </style>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/0db4fc3812.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- BLACK HEADER  -->
+
+    <div class="container-fluid black_hrader">
+      <div class="row g-0">
+        <div class="col-md-6 g-0">
+          <div class="first_header">
+            <i class="fa-solid fa-phone icons"></i>
+            <p class="in_black_header">Phone : 1800-8687-646 |</p>
+            <i class="fa-regular fa-envelope icons"></i>
+            <p class="in_black_header">Email : admission@mmusalan.org</p>
+          </div>
+          <div class="col-md-6 g-0">
+            <div class="right_pink_icons">
+              <i class="fa-brands fa-facebook" style="color: #d43565"></i>
+              <i class="fa-brands fa-square-twitter" style="color: #d43565"></i>
+              <i class="fa-brands fa-square-youtube" style="color: #d43565"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BACKGROUND IMAGE  -->
+
+    <div class="container-fliud">
+      <div class="row g-0">
+        <div class="col-md-12">
+          <img
+            class="image1"
+            src="/assets/img1.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- FACE NAVBAR  -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="face_nav">
+            <ul>
+              <li>HOME</li>
+              <li>ABOUT</li>
+              <li>ACADEMICS</li>
+              <li>ADMISSIONS</li>
+            </ul>
+            <ul>
+              <li>CAMPUS</li>
+              <li>PLACEMENT</li>
+              <li>RESEARCH</li>
+
+              <li>UNIQUE@MMU</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 2  -->
+
+    <div class="container section2">
+      <div class="row">
+        <div class="col-md-7 image2">
+          <div>
+            <img src="/assets/img2.png" alt="" />
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="sec2_text">
+            <p
+              style="
+                margin-bottom: 0px;
+                margin-top: 0px;
+                padding-bottom: 0px;
+                padding-top: 0px;
+              "
+              class="p_tag1"
+            >
+              MAHARISHI
+            </p>
+            <p
+              style="
+                margin-bottom: 0px;
+                margin-top: 0px;
+                padding-bottom: 0px;
+                padding-top: 0px;
+              "
+              class="p_tag1"
+            >
+              MARKANDESHWAR
+            </p>
+            <p
+              style="
+                margin-bottom: 0px;
+                margin-top: 0px;
+                padding-bottom: 0px;
+                padding-top: 0px;
+              "
+              class="p_tag1"
+            >
+              UNIVERSITY
+            </p>
+            <p class="p_tag2">Spredheading the Education Revolution</p>
+            <div>
+              <p class="p_tag3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
+                beatae nesciunt inventore nam deserunt velit ipsam,
+                exercitationem sequi enim cum incidunt optio blanditiis corrupti
+                quae aspernatur nobis architecto impedit assumenda nisi. Magnam
+                repudiandae maiores quibusdam architecto alias voluptate minus
+                rem, officiis blanditiis quis corporis odio? Tenetur qui
+                accusamus magni, minima enim, voluptatum tempore repellendus,
+                totam voluptatem dolore aut. Vitae vel incidunt atque nobis
+                obcaecati.
+              </p>
+              <button class="readmore_btn"><p>Read More</p> <span style="font-size: 200%;">&rarr;</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OLDMAN'S BANNER   -->
+
+    <div class="container-fluid mb-5">
+      <div class="row">
+        <div class="col-md-12 g-0">
+          <div>
+            <img
+              style="width: 100%"
+              src="/assets/oldman's banner.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW AND CARDS SECTION  -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <p class="sec3_heading">OUR LATEST NEWS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 3 CARDS  -->
+
+    <div class="container">
+      <div class="row sec_3_row">
+        <div class="col-md-3 sec_3_card">
+          <div>
+            <img
+              class="sec_3_images"
+              src="/assets/SEC_3 CARD1.png"
+              alt=""
+            />
+            <div>
+              <p class="card_heading">wellbeing self-isolation daily drop in</p>
+              <p class="card_text">
+                Date: 11 September 2021 Location : Arizon Grand Hall Ticket :
+                $10.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 sec_3_card">
+          <div>
+            <img
+              class="sec_3_images"
+              src="/assets/SEC_3 CARD2.png"
+              alt=""
+            />
+            <div>
+              <p class="card_heading">wellbeing self-isolation daily drop in</p>
+              <p class="card_text">
+                Date: 11 September 2021 Location : Arizon Grand Hall Ticket :
+                $10.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 sec_3_card">
+          <div>
+            <img
+              class="sec_3_images"
+              src="/assets/SEC_3 CARD3.png"
+              alt=""
+            />
+            <div>
+              <p class="card_heading">wellbeing self-isolation daily drop in</p>
+              <p class="card_text">
+                Date: 11 September 2021 Location : Arizon Grand Hall Ticket :
+                $10.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 sec_3_card">
+          <div>
+            <img
+              class="sec_3_images"
+              src="/assets/SEC_3 CARD4 .png"
+              alt=""
+            />
+            <div>
+              <p class="card_heading">wellbeing self-isolation daily drop in</p>
+              <p class="card_text">
+                Date: 11 September 2021 Location : Arizon Grand Hall Ticket :
+                $10.00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4 EARTH  -->
+
+    <div class="container">
+      <div class="row sec_4">
+        <div class="col-md-6">
+          <div class="sec4_text">
+            <p class="sec_4_heading">Preparing You For The New World</p>
+            <p style="font-size: 15px">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni,
+              esse eius distinctio tempore, nobis facilis adipisci deleniti
+              corporis dolorem sed facilis deserunt, corrupti provident eaque
+              libero laboriosam fugiat ullam optio praesentium vitae nostrum
+              nesciunt veritatis ex voluptate deleniti.
+            </p>
+            <button class="readmore_btn"><p>Read More</p> <span style="font-size: 200%;">&rarr;</span></button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="Sec4_img">
+            <img
+              class="earth_image"
+              src="/assets/earth_img.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 5  -->
+
+    <div class="container">
+      <div class="row sec5_row">
+        <div class="col-md-2">
+          <div>
+            <p>
+              <span class="section5_spans">50+</span>HITECH LABS IN DIFFERENT
+              DEPARTMENTS
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div>
+            <p>
+              <span class="section5_spans">12</span>LIBRARIES INCLUDING ONE
+              CENTRAL LIBRARY
+            </p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div>
+            <p>
+              SMART CLASSES FULLY<span class="section5_spans">WI-FI</span>CAMPUS
+            </p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div>
+            <p>
+              CONFORTABLE HOSTEL ACCOMODATION FOR<span class="section5_spans"
+                >7000+</span
+              >STUDENTS
+            </p>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div>
+            <p>
+              <span class="section5_spans">50,000+</span>SUCCESS STORIES &
+              DEDICATED PLACEMENT CELL
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EVENTS HEADING  -->
+
+    <div class="container">
+      <div style="width: 91%; margin-left: 50px" class="row">
+        <div class="col-md-6">
+          <div>
+            <p class="sec_4_heading">UNIVERSITY EVENTS</p>
+            <p style="font-weight: bold; font-size: 120%">
+              BRING THE BEST SPEAKERS AT EVERY EVENTS
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div>
+            <button class="event_btn"><p>all events</p></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 6  -->
+
+    <div class="container sec_6">
+      <div class="row event_image">
+        <div class="col-md-6">
+          <div style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
+            <img
+              style="width: 100%"
+              src="/assets/SEC6_IMG.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-3 sec_6_card">
+          <div>
+            <div>
+              <img
+                class="sec_3_images"
+                src="/assets/SEC_3 CARD1.png"
+                alt=""
+              />
+            </div>
+
+            <div>
+              <p
+                style="font-size: 110%; margin-bottom: 0px"
+                class="card_heading"
+              >
+                wellbeing self-isolation daily drop in
+              </p>
+              <p class="card_text">
+                Date: 11 September 2021 Location : Arizon Grand Hall Ticket :
+                $10.00
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 sec_6_card">
+          <div>
+            <img
+              class="sec_3_images"
+              src="/assets/SEC_3 CARD3.png"
+              alt=""
+            />
+            <div>
+              <p
+                style="font-size: 110%; margin-bottom: 0px"
+                class="card_heading"
+              >
+                wellbeing self-isolation daily drop in
+              </p>
+              <p class="card_text">
+                Date: 11 September 2021 Location : Arizon Grand Hall Ticket :
+                $10.00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 7 RED  -->
+
+    <div class="main">
+      <div class="image">
+        <img src="/red_card_assets/pexels-photo-459203.jpeg" alt="" />
+      </div>
+      <div class="red red_color"></div>
+
+      <div class="content">
+        <h1>TESTIMONIALS</h1>
+        <div class="cards">
+          <div class="card">
+            <img
+              class="card_pic"
+              src="/red_card_assets/Screenshot 2024-02-13 015850.png"
+              alt=""
+            />
+            <p style="text-align: justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              voluptas pariatur repellat expedita esse dolorem qui, nesciunt
+              deleniti molestias.
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              class="card_pic"
+              src="/red_card_assets/Screenshot 2024-02-13 020006.png"
+              alt=""
+            />
+            <p style="text-align: justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              voluptas pariatur repellat expedita esse dolorem qui, nesciunt
+              deleniti molestias.
+            </p>
+          </div>
+
+          <div class="card">
+            <img
+              class="card_pic"
+              src="/red_card_assets/Screenshot 2024-02-13 020103.png"
+              alt=""
+            />
+            <p style="text-align: justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              voluptas pariatur repellat expedita esse dolorem qui, nesciunt
+              deleniti molestias.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 8  -->
+
+    <div class="container-fluid sec8">
+      <div class="row">
+        <div class="col-md-6 sec8_textArea">
+          <p class="sec8_heading">
+            Rolling Admissions <br />
+            Now Open
+          </p>
+          <p style="font-size: 20px">
+            Get in touch with us to <br />
+            discuss it:
+          </p>
+          <button class="last_button">
+            <i style="padding-top: 3px" class="fa-solid fa-phone icons"></i>
+            <p>1800 2742 765</p>
+          </button>
+        </div>
+        <div class="col-md-6">
+          <img
+            class="children_image"
+            src="/assets/children's image.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER   -->
+
+    <div
+      style="height: 150px; background-color: red; color: white; z-index: 1"
+      class="container cont_1"
+    >
+      <div class="row">
+        <div class="col-md-6 frst_col">
+          <p class="main_heading">Subscribe</p>
+          <p>Get Latest Update Get Latest Update Get Latest Update</p>
+        </div>
+        <div class="col-md-6 input">
+          <input type="text" placeholder="Enter your email" />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container-fluid column_2"
+    >
+      <div class="row">
+        <div class="col-md-3 last_class">
+          <p style="font-size: 30px; color: red; font-weight: bold">About Us</p>
+          <p style="text-align: justify; color: rgb(165, 165, 165)">
+            Lorem ipsum dolor sit amet consectetur adip Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Porro ea commodi accusantium
+            atque eveniet facilis pariatur impedit ipsa.tenetur voluptatum
+            sapiente explicabo ipsa. Possimus necessitatibu exercitationem
+            cupiditate culpa ad, veritat
+          </p>
+          <p style="font-size: 25px; color: white; font-weight: 500">
+            Follow Us
+          </p>
+          <div style="font-size: 40px; gap: 18px; color: red">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i style="margin-left: 10px" class="fa-brands fa-google"></i>
+            <i style="margin-left: 10px" class="fa-brands fa-twitter"></i>
+            <i style="margin-left: 10px" class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <p style="font-size: 30px; color: red; font-weight: bold">
+            Quick Links
+          </p>
+          <div
+            style="
+              width: 100%;
+              height: 100%;
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              color: rgb(165, 165, 165);
+            "
+          >
+            <ul style="list-style: none">
+              <li>Android</li>
+              <li>Android</li>
+              <li>Android</li>
+              <li>Android</li>
+              <li>Android</li>
+              <li>Android</li>
+            </ul>
+
+            <ul style="list-style: none">
+              <li>Android</li>
+              <li>Android</li>
+              <li>Android</li>
+              <li>Android</li>
+              <li>Android</li>
+              <li>Android</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <p style="font-size: 30px; color: red; font-weight: bold">
+            Recent Post
+          </p>
+          <div style="display: flex; ">
+            <div 
+              style="
+                width: 60px;
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+              " class="img2"
+            >
+              <img
+                style="width: 90%; height: 25%"
+                src="/footer assets/Screenshot 2024-03-02 172423.png"
+                alt=""
+              />
+              <img
+                style="width: 90%; height: 25%"
+                src="/footer assets/Screenshot 2024-03-02 172423.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <div
+                style="width: 200px; height: 100px; color: rgb(165, 165, 165)"
+              >
+                <p>Lorem ipsum dolor sit amet e ratione quam commodi.</p>
+                <p><i class="fa-regular fa-clock"></i> 05 dec 2018</p>
+              </div>
+              <div
+                style="width: 200px; height: 100px; color: rgb(165, 165, 165)"
+              >
+                <p>Lorem ipsum dolor sit amet e ratione quam commodi.</p>
+                <p><i class="fa-regular fa-clock"></i> 05 dec 2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <p style="font-size: 30px; color: red; font-weight: bold">
+            Contact Us
+          </p>
+
+          <div>
+            <p style="color: rgb(165, 165, 165)">
+              <i class="fa-solid fa-headphones"></i> +91 79279737
+            </p>
+            <p style="color: rgb(165, 165, 165)">
+              <i class="fa-regular fa-envelope"></i> info@gmail.com
+            </p>
+            <p style="color: rgb(165, 165, 165)">
+              <i class="fa-solid fa-location-dot"></i> sec-61 Noida india
+            </p>
+            <p
+              style="
+                color: white;
+                font-size: 25px;
+                font-weight: 600;
+                margin-top: 40px;
+              "
+            >
+              Opening Hour
+            </p>
+            <p style="color: white; font-size: 20px; margin-top: 20px">
+              Sun-Sat: 10:00 am - 5:00 pm
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
